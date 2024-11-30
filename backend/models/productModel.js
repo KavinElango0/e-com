@@ -11,3 +11,5 @@ const productSchema = new mongoose.Schema({
     bestseller: { type: Boolean },
     date: { type: Number, required: true },
 })
+
+const productModel = mongoose.model("product",productSchema)
